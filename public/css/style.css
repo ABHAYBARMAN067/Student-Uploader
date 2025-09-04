@@ -1,0 +1,127 @@
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --accent: #ff6b3d;
+  --muted: #6b7280;
+  --shadow: 0 6px 18px rgba(20,20,50,0.06);
+  --radius: 10px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  padding:24px;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:940px;
+  margin:0 auto;
+  display:grid;
+  gap:20px;
+  grid-template-columns:1fr;
+}
+
+h1{margin:0 0 8px;font-size:28px}
+h2{margin:0 0 12px;font-size:18px;color:var(--muted)}
+
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:12px;
+}
+
+label{font-size:13px;color:var(--muted)}
+input[type="text"], input[type="number"], input[type="file"]{
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  font-size:14px;
+}
+
+.actions{
+  margin-top:8px;
+}
+
+button{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+button:disabled{opacity:0.6;cursor:not-allowed}
+
+.preview{
+  margin-top:8px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.preview img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:8px;
+  border:1px solid #eee;
+  box-shadow:0 6px 18px rgba(20,20,50,0.04);
+}
+
+.message{
+  margin-top:10px;
+  font-size:14px;
+  color:#0f172a;
+}
+
+.students-list{
+  display:grid;
+  gap:12px;
+}
+
+.student{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  border:1px solid #f1f5f9;
+  padding:10px;
+  border-radius:8px;
+  background:#fff;
+}
+
+.student img{
+  width:64px;
+  height:64px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.student .meta{
+  display:flex;
+  flex-direction:column;
+}
+
+.student .meta .name{font-weight:600}
+.student .meta .roll{color:var(--muted);font-size:13px}
+.empty{
+  color:var(--muted);
+  font-size:14px;
+  padding:8px 0;
+}
