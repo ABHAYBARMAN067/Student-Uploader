@@ -22,7 +22,8 @@ This code is primarily written to **test MongoDB Atlas and Cloudinary API integr
 1. **Clone the repository**  
 
 ```bash
-git clone <>
+git clone https://github.com/ABHAYBARMAN067/Student-Uploader.git
+
 cd student-uploader
 
 2. Install dependencies
