@@ -19,9 +19,14 @@ This code is primarily written to **test MongoDB Atlas and Cloudinary API integr
 
 ## 📝 Setup Instructions
 
+
+## 📂 Project File Structure
+
+![Project File Structure](screenshots/file-structure.png)
+
 1. **Clone the repository**  
 
-```bash
+
 git clone https://github.com/ABHAYBARMAN067/Student-Uploader.git
 
 cd student-uploader
